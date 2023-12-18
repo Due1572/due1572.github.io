@@ -1,6 +1,5 @@
-const baseUrl = "https://localhost:7013/api/InfoScreen"
-//const baseUrl = "https://infoscreenapi20230302160543.azurewebsites.net/api/infoscreen"
-//const baseUrl = "https://due1572.github.io/"
+//const baseUrl = "https://localhost:7013/api/InfoScreen"
+const baseUrl = "https://infoscreenapi20230302160543.azurewebsites.net/api/infoscreen"
 
 Vue.createApp({
     data() {
@@ -8,7 +7,7 @@ Vue.createApp({
             infoScreen: [],
             newInfoScreen: { id: 0, date: "", time: "", room: "", title: ""},
             addMessage: "",
-            //updateData: { id: null, date: null, time: null, room: null, title: null},
+            updateData: { id: null, date: null, time: null, room: null, title: null},
             updateMessage: "",
             deleteData: { id: null, date: null, time: null, room: null, title: null},
             post: 0,
@@ -36,14 +35,14 @@ Vue.createApp({
                 response = await axios.post(baseUrl, this.newInfoScreen)
                 this.addMessage = "Posten er tilføjet til infoskærmen"
                 setTimeout(function() {this.addMessage = ""}.bind(this), 2000)
-                //this.newInfoScreen.date = ""
+                this.newInfoScreen.date = ""
                 this.newInfoScreen.time = ""
                 this.newInfoScreen.room = ""
                 this.newInfoScreen.title = ""
                 this.getInfoScreen()
             }
             catch (ex) {
-                alert("Udfyld alle felter for at føje posten til skærmen.123")
+                alert("Udfyld alle felter for at føje posten til skærmen.")
             }
         },
         async updateInfoScreen() {
@@ -52,7 +51,7 @@ Vue.createApp({
                 response = await axios.put(url, this.updateData)
                 this.updateMessage = "Posten er rettet på infoskærmen"
                 setTimeout(function() {this.updateMessage = ""}.bind(this), 2000)
-                //this.updateData.date = ""
+                this.updateData.date = ""
                 this.updateData.time = ""
                 this.updateData.room = ""
                 this.updateData.title = ""
