@@ -142,7 +142,7 @@
                         <p style="font-weight: bold;">SLET</p>
                         <p class="paragraph">Vælg en post du vil slette:</p>
                         <select v-model="deleteData" style="width: 300px;">
-                            <option v-for="post in infoScreen" v-bind:value="post"> {{post.time}} - {{post.title}} - {{post.room}}</option>
+                            <option v-for="post in infoScreen" v-bind:value="post">{{post.time}} - {{post.title}} - {{post.room}}</option>
                         </select><br><br>
                         <button v-on:click="deletePost()" class="btn btn-danger"><strong>SLET</strong></button><br>
                         {{deleteMessage}}
