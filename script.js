@@ -8,7 +8,7 @@ Vue.createApp({
             infoScreen: [],
             newInfoScreen: { id: 0, date: "", time: "", room: "", title: ""},
             addMessage: "",
-            updateData: { id: null, date: null, time: null, room: null, title: null},
+            //updateData: { id: null, date: null, time: null, room: null, title: null},
             updateMessage: "",
             deleteData: { id: null, date: null, time: null, room: null, title: null},
             post: 0,
@@ -43,7 +43,7 @@ Vue.createApp({
                 this.getInfoScreen()
             }
             catch (ex) {
-                alert("Udfyld alle felter for at føje posten til skærmen.")
+                alert("Udfyld alle felter for at føje posten til skærmen.123")
             }
         },
         async updateInfoScreen() {
