@@ -1,6 +1,6 @@
 //const baseUrl = "https://localhost:7013/api/InfoScreen"
 //const baseUrl = "https://infoscreenapi20230302160543.azurewebsites.net/api/infoscreen"
-const baseUrl = "https://due1572.github.io/InfoScreenWithApi"
+//const baseUrl = "https://due1572.github.io/InfoScreenWithApi"
 
 Vue.createApp({
     data() {
@@ -68,6 +68,7 @@ Vue.createApp({
                 response = await axios.delete(url)
                 this.deleteMessage = "Posten er slettet"
                 setTimeout(function() {this.deleteMessage = ""}.bind(this), 2000)
+                this.updateData.date = ""
                 this.updateData.time = ""
                 this.updateData.room = ""
                 this.updateData.title = ""
