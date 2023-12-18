@@ -36,7 +36,7 @@ Vue.createApp({
                 response = await axios.post(baseUrl, this.newInfoScreen)
                 this.addMessage = "Posten er tilføjet til infoskærmen"
                 setTimeout(function() {this.addMessage = ""}.bind(this), 2000)
-                //this.newInfoScreen.date = ""
+                this.newInfoScreen.date = ""
                 this.newInfoScreen.time = ""
                 this.newInfoScreen.room = ""
                 this.newInfoScreen.title = ""
@@ -52,7 +52,7 @@ Vue.createApp({
                 response = await axios.put(url, this.updateData)
                 this.updateMessage = "Posten er rettet på infoskærmen"
                 setTimeout(function() {this.updateMessage = ""}.bind(this), 2000)
-                //this.updateData.date = ""
+                this.updateData.date = ""
                 this.updateData.time = ""
                 this.updateData.room = ""
                 this.updateData.title = ""
@@ -68,7 +68,6 @@ Vue.createApp({
                 response = await axios.delete(url)
                 this.deleteMessage = "Posten er slettet"
                 setTimeout(function() {this.deleteMessage = ""}.bind(this), 2000)
-                this.updateData.date = ""
                 this.updateData.time = ""
                 this.updateData.room = ""
                 this.updateData.title = ""
