@@ -88,13 +88,9 @@ p {
 }
 
 .infoOverlay {
-    height: 30%;
-    /*position: absolute;
-    left: 150px; 
-    top: 300px; 
-    color: red; 
-    font-weight: bold; 
-    z-index: 10; */
+    position: absolute;
+    left: 100px; 
+    top: 8000px; 
 }
 /* POST */
 .inputInfoScreen {
