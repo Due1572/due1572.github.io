@@ -1,7 +1,9 @@
 //const baseUrl = "https://localhost:7013/api/InfoScreen"
-const baseUrl = "https://rkinfoscreen.azurewebsites.net/api/infoscreen"
+const baseUrl = "https://infoscreenrk.azurewebsites.net/api/infoscreen"
 
-Vue.createApp({
+const { createApp, ref } = Vue
+
+createApp({
     data() {
         return {
             infoScreen: [],
