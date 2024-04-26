@@ -88,9 +88,9 @@ p {
 }
 
 .infoOverlay {
-    position: absolute;
-    height: 20%;
-    /*left: 150px; 
+    height: 30%;
+    /*position: absolute;
+    left: 150px; 
     top: 300px; 
     color: red; 
     font-weight: bold; 
