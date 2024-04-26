@@ -71,6 +71,7 @@ p {
     box-shadow: 20px 0px 10px 0px rgba(250,250,244) inset;
 
 }
+
 .container-img {
     position: absolute;
     height: 100%;
@@ -134,4 +135,13 @@ p {
     margin-bottom: auto;
     justify-content: center;
     align-items: center;
+}
+
+#text-overlay {
+    position: absolute;
+    left: 150px; /* X coordinate */
+    top: 300px; /* Y coordinate */
+    color: red; /* Text color */
+    font-weight: bold; /* Text weight */
+    z-index: 10; /* Ensure it's above other elements */
 }
