@@ -41,15 +41,7 @@ p {
 #leftScreen {
     padding: 2em;
     /* background-color: #eeeee4; */
-    height: 80vh;
-    position: relative;
-
-}
-
-#lowleftScreen {
-    padding: 2em;
-    /* background-color: #eeeee4; */
-    height: 20vh;
+    height: 100vh;
     position: relative;
 
 }
