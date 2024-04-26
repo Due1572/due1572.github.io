@@ -87,10 +87,10 @@ p {
     height: 70%;
 }
 
-.infoOverlay {
+#info-overlay {
     position: absolute;
     left: 100px; 
-    top: 8000px; 
+    top: 800px; 
 }
 /* POST */
 .inputInfoScreen {
