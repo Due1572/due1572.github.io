@@ -14,6 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+
     <title>Infoskærm</title>
 </head>
 
@@ -74,8 +75,8 @@
                 <div class="col-sm-4">
                     <div class="inputInfoScreen">
                         <p style="font-weight: bold;">OPRET</p>
-                        <p class="paragraph">Vælg dato:</p>
-                        <input v-model="newInfoScreen.date" placeholder="Dato" type="date"><br><br>
+                        <!-- <p class="paragraph">Vælg dato:</p>
+                        <input v-model="newInfoScreen.date" placeholder="Dato" type="date"><br><br> -->
                         <p class="paragraph">Vælg tidspunkt:</p>
                         <input v-model="newInfoScreen.time" placeholder="Tid" type="time" /><br><br>
                         <p class="paragraph">Tilføj titel:</p>
@@ -109,8 +110,8 @@
                         <select v-model="updateData" style="width: 300px;">
                             <option v-for="post in infoScreen" v-bind:value="post">{{post.time}} - {{post.title}} - {{post.room}}</option>
                         </select><br><br>
-                        <p class="paragraph">Opdater dato:</p>
-                        <input v-model="updateData.date" placeholder="Dato" type="date"><br><br>
+                        <!-- <p class="paragraph">Opdater dato:</p>
+                        <input v-model="updateData.date" placeholder="Dato" type="date"><br><br> -->
                         <p class="paragraph">Opdater tidspunkt:</p>
                         <input v-model="updateData.time" placeholder="tid" type="time" /><br><br>
                         <p class="paragraph">Opdater titel:</p>
@@ -153,11 +154,8 @@
         </div>
     </div>
     </div>
-<!--
-<div id="text-overlay" style="position: absolute; left: 200px; top: 700px; color: red; font-weight: bold;">
-    tekstfelttest
-</div>-->
-<!-- https://www.youtube.com/watch?v=Gdr7DCakdcU -->
 </body>
-
+<div id="text-overlay">
+    <p>I</p>
+</div>
 </html>
