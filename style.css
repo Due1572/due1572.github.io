@@ -41,7 +41,15 @@ p {
 #leftScreen {
     padding: 2em;
     /* background-color: #eeeee4; */
-    height: 100vh;
+    height: 80vh;
+    position: relative;
+
+}
+
+#lowleftScreen {
+    padding: 2em;
+    /* background-color: #eeeee4; */
+    height: 20vh;
     position: relative;
 
 }
@@ -127,9 +135,12 @@ p {
     justify-content: center;
     align-items: center;
 }
+
 #text-overlay {
     position: absolute;
-    left: 100px; /* X coordinate */
-    top: 800px; /* Y coordinate */
+    left: 150px; /* X coordinate */
+    top: 300px; /* Y coordinate */
+    color: red; /* Text color */
+    font-weight: bold; /* Text weight */
     z-index: 10; /* Ensure it's above other elements */
 }
